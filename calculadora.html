@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>2022-10-22</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+    </style>
+</head>
+<body onload="calcularTempoDesdeData()">
+    <h2>Tempo de Namoro</h2>
+    
+    <p id="resultado"></p>
+
+    <script>
+        function calcularTempoDesdeData() {
+            // Data de referência
+            var dataReferencia = new Date('2022-10-22');
+            
+            // Data atual
+            var dataAtual = new Date();
+            
+            // Calcula a diferença em milissegundos
+            var diferencaEmMilissegundos = dataAtual - dataReferencia;
+            
+            // Converte a diferença para anos, meses e dias
+            var diferencaEmAnos = Math.floor(diferencaEmMilissegundos / (365.25 * 24 * 60 * 60 * 1000));
+            var diferencaEmMeses = Math.floor(diferencaEmMilissegundos / (30.44 * 24 * 60 * 60 * 1000));
+            var diferencaEmDias = Math.floor(diferencaEmMilissegundos / (24 * 60 * 60 * 1000));
+
+            // Calcula o restante de meses e dias
+            var mesesRestantes = diferencaEmMeses % 12;
+            var diasRestantes = diferencaEmDias % 30;
+
+            // Exibe o resultado
+            document.getElementById("resultado").innerHTML = "Já se passaram " + diferencaEmAnos + " anos, " + mesesRestantes + " meses e " + diasRestantes + " dias desde o dia 22 de outubro de 2022";
+        }
+    </script>
+</body>
+</html>

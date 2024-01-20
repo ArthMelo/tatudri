@@ -1,0 +1,156 @@
+/* ESTILO GERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #ffe5f0;
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.botao button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #fdcae1;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.botao button:hover{
+    box-shadow: 0px 0px 8px #fdcae1;
+    transform: scale(1.05);
+}
+h2.titulo{
+    color: black;
+    font-size: 34px;
+    text-align: center;
+}
+/* ESTILO DO CABEÇALHO */
+
+header{
+    padding: 40px 4%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover{
+    color: #e3b1c8;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+/* TOPO DO SITE */ 
+
+section.topo{
+    padding: 40px 4%;
+}
+
+section.topo .flex{
+    align-items:center;
+    justify-content: center;
+    gap: 90px;
+}
+.topo h1{
+    font-size: 42px;
+    line-height: 40px;
+}
+
+.topo .textosite p{
+    margin: 30px 0;
+}
+
+.topo .imgsite img{
+    border-radius: 30px;
+} 
+
+.topo .imgsite img:hover{
+    scale: 1.05;
+    transition: .2s;
+}
+
+/* PLaylists */
+
+section.Playlists .flex{
+    padding: 40px 4%;
+}
+
+section.Playlists .flex{
+    align-items:center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.Playlists .Taturro-box{
+    size-adjust: 352px;
+    
+}
+
+/* Inicio bloco final */
+
+.bloconovo .img-final img{
+    border-radius: 20px;
+} 
+
+section.bloconovo{
+    padding: 40px 4%;
+}
+
+section.bloconovo .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.bloconovo .txt-final{
+    color: black;
+    
+}
+
+.bloconovo .txt-final h2{
+    line-height: 50px;
+    font-size: 38px;
+}
+
+
+.bloconovo .txt-final p{
+    margin: 10px 0;
+}
+
+.bloconovo .img-final img:hover{
+    scale: 1.05;
+    transition: .2s;
+} 
